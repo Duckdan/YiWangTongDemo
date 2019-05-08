@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CMBJumper</string>
+    <string name="cmbmobilebank_schema">cmbmobilebank://CMBLS/FunctionJump?action=gofuncid\u0026funcid=200011\u0026serverid=CMBEUserPay\u0026requesttype=post\u0026cmb_app_trans_parms_start=here</string>
+    <string name="requestdata">BranchID=0755\u0026Cono=000054\u0026BillNo=9999000014\u0026Amount=0.01\u0026Date=20180705\u0026MerchantUrl=http://99.1.101.66/noti\u0026MerchantPara=para1</string>
+    <string name="h5url">http://99.6.150.83/netpayment_app/BaseHttp.dll?OSSDKEntry</string>
+    <string name="payurl">http://99.6.150.83/netpayment_app/BaseHttp.dll?OSSDKEntry\u0026BranchID=0010\u0026CoNo=006958\u0026BillNo=M2018072000000060\u0026Amount=0.01\u0026Date=20180720\u0026MerchantUrl=http://99.1.101.66/noti\u0026MerchantPara=para1</string>
+</resources>

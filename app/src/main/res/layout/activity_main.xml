@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.hp.cmbsdk_sample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16.0sp"
+        android:textColor="#000000"
+        android:text="参数输入区："
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="40.0dip"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:text="cmbjumpurl:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:id="@+id/cmbjumpurl"
+            android:textSize="12.0sp"
+            android:textColor="#FFAAAAAA"
+            android:textColorHint="#FFAAAAAA"
+            android:text="@string/cmbmobilebank_schema"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="83.0dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="40.0dip"
+            android:singleLine="true"
+            />
+        <View
+            android:id="@+id/v1"
+            android:background="#FF81705A"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/cmbjumpurl"
+            android:layout_marginTop="6.0dip"
+            >
+        </View>
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="80dip"
+            android:singleLine="true"
+            android:text="h5url:"
+            android:maxLength="12"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:id="@+id/h5url"
+            android:textSize="12.0sp"
+            android:textColor="#FFAAAAAA"
+            android:textColorHint="#FFAAAAAA"
+            android:text="@string/h5url"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78.0dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="80dip"
+            android:singleLine="true"
+            />
+        <View
+            android:id="@+id/v2"
+            android:layout_below="@id/h5url"
+            android:background="#FF81705A"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="6.0dip"
+            >
+        </View>
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="120dip"
+            android:singleLine="true"
+            android:text="reqdata:"
+            android:maxLength="12"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:id="@+id/requestdata"
+            android:textSize="12.0sp"
+            android:text="@string/requestdata"
+            android:textColor="#FFAAAAAA"
+            android:textColorHint="#FFAAAAAA"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78.0dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="120.0dip"
+            android:singleLine="true"
+            />
+        <View
+            android:id="@+id/v3"
+            android:layout_below="@id/requestdata"
+            android:background="#FF81705A"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="6.0dip"
+            >
+        </View>
+
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="160dp"
+            android:singleLine="true"
+            android:text="method:"
+            android:maxLength="12"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="12.0sp" />
+
+        <EditText
+            android:id="@+id/method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78.0dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="160dp"
+            android:background="#00000000"
+            android:singleLine="true"
+            android:text="pay"
+            android:textColor="#FFAAAAAA"
+            android:textColorHint="#FFAAAAAA"
+            android:textSize="12.0sp" />
+        <View
+            android:layout_below="@id/method"
+            android:background="#FF81705A"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="6.0dip"
+            >
+        </View>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16.0sp"
+        android:textColor="#000000"
+        android:text="跳转区："
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="198.0dip"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="218dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/jumpcmb"
+            android:textAlignment="center"
+            android:text="跳转招行app"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/jumph5"
+            android:text="跳转H5页面"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/autojump"
+            android:text="自动跳转（sendReq）"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/checkappinstalled"
+            android:text="是否安装招行App"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:textSize="10dp"
+            android:id="@+id/getapiversion"
+            android:text="获取SDK版本"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="318.0dip"
+        android:background="#FF81705A"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        >
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="16.0sp"
+        android:textColor="#000000"
+        android:text="显示信息："
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="328.0dip"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/showlog"
+        android:layout_marginTop="338.0dip"
+        android:textSize="12.0sp"
+        android:textColor="#FFAAAAAA"
+        android:textColorHint="#FFAAAAAA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="false"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:editable="false"
+        />
+</RelativeLayout>
