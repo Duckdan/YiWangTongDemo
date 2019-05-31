@@ -2,47 +2,67 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.yiwangtongdemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:exported="true"
         android:icon="@mipmap/ic_launcher_cmb"
         android:label="@string/app_name"
+        android:launchMode="singleTask"
         android:roundIcon="@mipmap/ic_launcher_cmb"
-        android:supportsRtl="true"
-        android:exported="true"
-        android:launchMode="singleTask">
-
-        <activity android:name=".MainActivity" android:taskAffinity="cmb.pb.sdk_sample.singleTask.affinity">
+        android:supportsRtl="true">
+        <!--Demo开始-->
+        <activity
+            android:name=".MainActivity"
+            android:taskAffinity="cmb.pb.sdk_sample.singleTask.affinity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="samplesdk_"/>
+
+                <data android:scheme="samplesdk_" />
             </intent-filter>
         </activity>
-
         <activity android:name=".PayActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name="cmbapi.CMBSchemeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:scheme="samplesdk"/>
+
+                <data android:scheme="samplesdk" />
             </intent-filter>
         </activity>
+        <!--Demo结束-->
 
+        <!--我的接入-->
+        <activity
+            android:name="com.example.android.myyiwangtong.CMBApiEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="ahffafcjjd" />
+                <!--scheme必须要有，用来接收支付成功之后的回调-->
+            </intent-filter>
+        </activity>
+        <!--我的开始-->
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
